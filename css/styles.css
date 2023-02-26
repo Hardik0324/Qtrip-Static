@@ -72,24 +72,39 @@ footer {
 
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/assets/hero.jpg");
-
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../assets/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   /* TODO: MODULE_LAYOUT */
   /* 1. Set a specific height. */
   /* 2. Position and center the image to scale nicely on all screens. */
 }
 
 .hero-subheading {
+  color: white;
+}
+
+.hero-input1 {
+  color: white;
   font-size: 24px;
   font-weight: 100;
+  text-align: center;
 }
+
 .hero-input {
-  width: 80%;
+  width: 60%;
   height: 50px;
   padding: 16px;
   border-radius: 8px;
   border: none;
+}
+
+.hero-input::placeholder{
+  text-align: center;
 }
 
 .nav-link {
@@ -100,46 +115,247 @@ footer {
 /* Adventures grid page CSS */
 /* ================================== */
 
-.adventure-card {
-  /* TODO: MODULE_ADVENTURES_GRID */
-  /* 1. Fill in the required properties. */
-}
-.adventure-card img {
-  /* TODO: MODULE_ADVENTURES_GRID */
-  /* 1. Fill in the required properties. */
-}
-.adventure-card img:hover {
-  /* TODO: MODULE_ADVENTURES_GRID */
-  /* 1. Fill in the required properties. */
+.adventure-card{
+  width: 25vh;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
+.adventure-card img{
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s ease-out;
+}
+
+.adventure-card img:hover {
+  transform: scale(1.2, 1.2);
+  filter: grayscale(80%);
+}
+
+.card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  color: white;
+}
+
+.advhea{
+  margin-top: 60px;
+  margin-left: 7vw;
+}
+
+.advhea2{
+  margin-left: 7vw;
+}
 /* ================================== */
 /* Adventure details page CSS */
 /* ================================== */
 
-.adventure-detail-card {
-  /* TODO: MODULE_ADVENTURE_DETAILS */
-  /* 1. Fill in the required properties. */
+.r1{
+  justify-content: space-evenly;
+}
 
+.adventure-detail-card {
+  width: 25vh;
+  height: 40vh;
+  position: relative;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 15vw;
+  margin: auto;
 }
 
 .adventure-card-image {
-  /* TODO: MODULE_ADVENTURE_DETAILS */
-  /* 1. Fill in the required properties. */
+  width: 100%;
+  height: 85%;
+  border-radius: 10px 10px 0 0;
 }
+
 .adventure-card-image:hover {
-  /* TODO: MODULE_ADVENTURE_DETAILS */
-  /* 1. Fill in the required properties. */
+  filter: grayscale(80%);
 }
+
+.card-body1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+  color: rgb(6, 6, 6);
+}
+
 .experience-content ul li {
   margin-left: 16px;
   padding: 0;
 }
 
-@media only screen and (min-width: 768px) {
-  /* For desktops phones: */
+.container1{
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 100%;
+  margin-top: 3vh;
+}
+
+.content{
+  padding: 0 0;
+  display: flex;
+  flex-direction: column;
+  /* grid-template-columns: 100%; */
+  /* grid-template-rows: 40% 60%; */
+}
+
+.container11{
+  display: grid;
+  grid-template-columns: 66% 34%;
+  grid-template-rows: 100%;
+  margin-right: 2vw;
+  margin-left: 2vw;
+}
+
+.container21{
+  margin-right: 1vw;
+}
+
+.container21 img{
+  height: 100%;
+  width: 100%
+}
+
+.container22{
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 100%;
+  margin-left: 1vw;
+  margin-right: 2vw;
+}
+
+.container31{
+  margin-bottom: 1vh;
+
+}
+
+.container31 img{
+  height: 100%;
+  width: 100%;
+}
+
+.container32{
+  margin-top: 1vh;
+}
+
+.container32 img{
+  height: 100%;
+  width: 100%;
+}
+
+.container12{
+  margin-right: 2vw;
+  margin-left: 2vw;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transform: translateX(-30%) translateY(70%);
+}
+
+.yell{
+  color: rgb(247, 187, 6);
+}
+ 
+.content1{
+  padding-top: 2vh;
+  margin-right: 4vw;
+  margin-left: 2vw;
+}
+
+.contentp{
+  opacity: 50%;
+}
+
+@media only screen and (min-width:768px){
   #reservation {
     width: 400px;
     position: fixed;
+  }
+}
+
+@media only screen and (min-width:768px) and (max-width: 992px){
+  .hero-image{
+    height: 60vh;
+  }
+  
+  .adventure-detail-card{
+    width: 17vw;
+  }
+}
+
+@media only screen and (min-width: 576px)  and (max-width: 767px){
+  /* For desktops phones: */
+  .hero-image{
+    height: 60vh;
+  }
+
+  .adventure-detail-card{
+    width: 30vw;
+  }
+
+  .card-body1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .adventure-card-image {
+    width: 100%;
+    height: 75%;
+  }
+}
+
+@media only screen and (max-width: 576px){
+  .hero-image{
+    height: 70vh;
+  }
+
+  .adventure-detail-card{
+    width: 35vw;
+  }
+
+  .card-body1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .adventure-card-image {
+    width: 100%;
+    height: 75%;
+  }
+
+  .container1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .container12{
+    margin-top: 2vh;
+  }
+
+  .container11{
+    grid-template-columns: 100%;
+  }
+  
+  .container22{
+    display: none;
   }
 }

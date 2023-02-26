@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>QTrip</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css" />
 
   <!-- TODO: MODULE_LAYOUT -->
@@ -17,21 +18,129 @@
   <!-- TODO: MODULE_LAYOUT -->
   <!-- 1. Use appropriate css classes on nav element. -->
   <!-- 2. Add child elements as required. -->
-
-   <nav></nav> 
+  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+	  <div class="container-fluid ">
+		<a class="navbar-brand " href="#">Navbar</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+		  <ul class="navbar-nav ">
+			<li class="nav-item">
+			  <a class="nav-link" href="#">Home</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="./pages/adventures/index.html">Explore</a>
+			</li>			
+		  </ul>		  
+		</div>
+	  </div>
+	</nav>
 
 
   <!-- TODO: MODULE_LAYOUT -->
   <!-- 1. Use appropriate css classes on the hero image container element. -->
   <!-- 2. Add child elements as required. -->
 
-   <div class="hero-image d-flex"></div> 
+  <div class="hero-image d-flex">
+    <h1 class="hero-subheading">Welcome to QTrip</h1>
+    <div class="hero-input1">Explore the world with fantastic place to venture around</div>
+    <input type="text" class="hero-input" placeholder="Search a city" />
+  </div> 
 
-
-  <div class="container">
-    <!-- TODO: MODULE_LAYOUT -->
-    <!-- 1. Create the grid like layout as required. -->
-  </div>
+  <div id="html-container mb-5" class="container mt-5">
+    <div class="row">
+      <div class="col-12 col-sm-6 col-lg-3 mb-4">
+        <a href="#">
+          <div class="card adventure-card">
+            <img src="./assets/bengaluru.jpg" alt="bengaluru">
+            <div class="card-body">
+              <h5>Bengaluru</h5>
+              <p>100+</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 mb-4">
+        <a href="#">
+          <div class="card adventure-card">
+            <img src="./assets/kolkata.jpg" alt="kolkata">
+            <div class="card-body">
+              <h5>Bengaluru</h5>
+              <p>100+</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 mb-4">
+        <a href="#">
+          <div class="card adventure-card">
+            <img src="./assets/goa.jpg" alt="goa">
+            <div class="card-body">
+              <h5>Bengaluru</h5>
+              <p>100+</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 mb-4">
+        <a href="#">
+          <div class="card adventure-card">
+            <img src="./assets/mumbai.jpg" alt="mumbai">
+            <div class="card-body">
+              <h5>Bengaluru</h5>
+              <p>100+</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 mb-4">
+        <a href="#">
+          <div class="card adventure-card">
+            <img src="./assets/singapore.jpg" alt="singapore">
+            <div class="card-body">
+              <h5>Bengaluru</h5>
+              <p>100+</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 mb-4">
+        <a href="#">
+          <div class="card adventure-card">
+            <img src="./assets/dubai.jpg" alt="dubai">
+            <div class="card-body">
+              <h5>Bengaluru</h5>
+              <p>100+</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 mb-4">
+        <a href="#">
+          <div class="card adventure-card">
+            <img src="./assets/malaysia.jpg" alt="malaysia">
+            <div class="card-body">
+              <h5>Bengaluru</h5>
+              <p>100+</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 mb-4">
+        <a href="#">
+          <div class="card adventure-card">
+            <img src="./assets/paris.jpg" alt="paris">
+            <div class="card-body">
+              <h5>Bengaluru</h5>
+              <p>100+</p>
+            </div>
+          </div>
+        ;</a>
+        </div>
+      </div>
+    </div>
+  
 
   <footer>
     <div class="container">© QTrip 2020</div>
@@ -39,7 +148,7 @@
 
   <!-- TODO: MODULE_LAYOUT -->
   <!-- Add scripts needed for bootstrap to work -->
-  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 
 </html>
